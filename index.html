@@ -32,19 +32,26 @@
         <div class="row row-offcanvas row-offcanvas-left">
             <!--   *** SIDEBAR ***-->
             <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
-                <div class="sidebar-content">
-                    <h1 class="sidebar-heading text-center">
+                <div id="sidebar-content" class="sidebar-content" data-spy="affix">
+                    <h1 id="sidebar-heading" class="sidebar sidebar-heading text-center">
                         Michał Kapiczyński<br>
                         <small class="text-muted">Software developer portfolio</small>
                     </h1>
 
-                    <p class="sidebar-p text-center">I am an experienced Software Developer, with primary expertise in web
-                        development, and software engineering. However, I believe that the world of IT is definitely too
+                    <p class="sidebar sidebar-p text-center">I am an experienced Software Developer, with primary expertise
+                        in
+                        web
+                        development, and software engineering. However, I believe that the world of IT is definitely
+                        too
                         fascinating to restrict yourself to a single area of interest.</p>
                     <p class="sidebar-p text-center">Originally from Warsaw, currently living in Aarhus. </p>
                     <ul class="sidebar-menu">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
+                        <ul class="sidebar-submenu" type="none">
+                            <li><a href="#education-section">Education</a></li>
+                            <li><a href="#job-section">Job Experience</a></li>
+                        </ul>
                         <li><a href="contact.html">Get in touch</a></li>
                     </ul>
                     <p class="social">
@@ -70,11 +77,11 @@
                 <div class="grid">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-p2p-network.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-p2p-network.html" title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/social-network.png" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-p2p-network.html">P2P Social Network</a></h4>
+                                    <h4><a href="detail/detail-p2p-network.html">P2P Social Network</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Have you seen Sillicon Valley tv series? If so, you may remember the idea of
                                             decentralized internet. Why not a decentralized social network then?</p>
@@ -83,11 +90,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-wot.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-wot.html" title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/IoT.png" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-wot.html">Web of Things</a></h4>
+                                    <h4><a href="detail/detail-wot.html">Web of Things</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Internet of Things is definitely a hot topic nowadays. This project is aimed
                                             as a first encounter with a notion of the IoT, and the Web of Things
@@ -97,11 +104,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-kademlia.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-kademlia.html" title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/kademlia.jpg" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-kademlia.html">Kademlia</a></h4>
+                                    <h4><a href="detail/detail-kademlia.html">Kademlia</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Kademlia is a distributed hash table for decentralized peer-to-peer
                                             networks.It specifies the structure of the network and the exchange of
@@ -113,7 +120,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
                             <div class="box-masonry">
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-oauth-client.html">OAuth Client</a>
+                                    <h4><a href="detail/detail-oauth-client.html">OAuth Client</a>
                                     </h4>
                                     <div class="box-masonry-desription">
                                         <p>Login with facebook? Let's try to login with your own OAuth authorization
@@ -123,13 +130,13 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-oauth-server.html"
+                            <div class="box-masonry"><a href="detail/detail-oauth-server.html"
                                                         title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/oauth-2.png" alt="Detail project description"
                                     class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-oauth-server.html">OAuth Authorization Server</a></h4>
+                                    <h4><a href="detail/detail-oauth-server.html">OAuth Authorization Server</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Every web developer knows OAuth authorization standard from the client
                                             perspective. This project's goal was to implement the server side of the
@@ -139,11 +146,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-fb-login.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-fb-login.html" title=""
                                                         class="box-masonry-image with-hover-overlay"><img
                                     src="img/portfolio/facebook-login.jpg" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-hover-text-header">
-                                    <h4><a href="detail-fb-login.html">FB Login Flow</a></h4>
+                                    <h4><a href="detail/detail-fb-login.html">FB Login Flow</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>The project is an implementation of the FB login flow.</p>
                                     </div>
@@ -151,11 +158,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-robot-control.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-robot-control.html" title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/robot.jpg" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-robot-control.html">Robot Control</a></h4>
+                                    <h4><a href="detail/detail-robot-control.html">Robot Control</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Robots are an advanced technology, but usually (Let's not think about AI
                                             right
@@ -166,11 +173,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-go-events.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-go-events.html" title=""
                                                         class="box-masonry-image with-hover-overlay"><img
                                     src="img/portfolio/golang.png" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-hover-text-header">
-                                    <h4><a href="detail-go-events.html">GO Events</a></h4>
+                                    <h4><a href="detail/detail-go-events.html">GO Events</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Go application for getting information about facebook events for a given
                                             location.</p>
@@ -179,11 +186,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-number-what.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-number-what.html" title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/number-what.jpg" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-number-what.html">NumberWhat</a></h4>
+                                    <h4><a href="detail/detail-number-what.html">NumberWhat</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>NumberWhat is a clock for people with discalcular disfunction. It has been
                                             created as a project during AUHack 2017 Hackaton.</p>
@@ -195,7 +202,7 @@
                             <div class="box-masonry">
                                 <div class="box-masonry-text">
                                     <h4>
-                                        <a href="detail-farmcom.html">FarmCom
+                                        <a href="detail/detail-farmcom.html">FarmCom
                                             - System Requirement Specification</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>The document is a requirement specification for a FarmCom system created in
@@ -214,11 +221,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-django.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-django.html" title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/django.png" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-django.html">ZPR - Python Django Webapp</a></h4>
+                                    <h4><a href="detail/detail-django.html">ZPR - Python Django Webapp</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Don't be misled by the picture. The project has nothing to do with the
                                             Tarantino movie. Instead, it is a web application for signing on projects by
@@ -234,7 +241,7 @@
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/dron-vision.jpg" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail.html">Dron Vision</a></h4>
+                                    <h4><a href="detail/detail.html">Dron Vision</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Information system enabling to gather positional data from unmanned aerial
                                             vehicleas known as drones and visualize on mobile devices, a notion of
@@ -244,11 +251,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-flight-sim.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-flight-sim.html" title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/flightsim.jpg" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-flight-sim.html">FlightSim</a></h4>
+                                    <h4><a href="detail/detail-flight-sim.html">FlightSim</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>Airport simulator written in C++ as an educational project during my
                                             Bachelor's studies.</p>
@@ -257,11 +264,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                            <div class="box-masonry"><a href="detail-flappy-assassin.html" title=""
+                            <div class="box-masonry"><a href="detail/detail-flappy-assassin.html" title=""
                                                         class="box-masonry-image with-hover-overlay with-hover-icon"><img
                                     src="img/portfolio/flappyAssasin.jpg" alt="" class="img-responsive"></a>
                                 <div class="box-masonry-text">
-                                    <h4><a href="detail-flappy-assassin.html">Flappy Assassin</a></h4>
+                                    <h4><a href="detail/detail-flappy-assassin.html">Flappy Assassin</a></h4>
                                     <div class="box-masonry-desription">
                                         <p>My first 'meaningful' Java project written in May 2015. Flappy Assassin is a
                                             simple game based on a Flappy Bird idea.</p>

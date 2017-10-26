@@ -1,1 +1,12 @@
-/* your styles go here */
+div.affix {
+    position: fixed;
+    padding-left: 0;
+    width: inherit;
+}
+div.affix-top {
+    position: static;
+}
+div.affix-bottom {
+    position: absolute;
+}
+
