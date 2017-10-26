@@ -33,31 +33,26 @@
             <!--   *** SIDEBAR ***-->
             <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
                 <div class="sidebar-content">
-                    <h1 class="sidebar-heading"><a href="index.html">Creative</a></h1>
-                    <p class="sidebar-p">I am a creative illustrator and graphic designer with more than 10 years of
-                        experience. </p>
-                    <p class="sidebar-p">Originally from Toronto, currently based in London. </p>
+                    <h1 class="sidebar-heading">Hello!</h1>
+                    <h1 class="sidebar-heading">My name is Michal Kapiczynski</h1>
+                    <p class="sidebar-p">I am an experienced Software Developer, with primary expertise in web
+                        development, and software engineering. However, I believe that the world of IT is definitely too
+                        fascinating to restrict yourself to a single area of interest.</p>
+                    <p class="sidebar-p">Originally from Warsaw, currently living in Aarhus. </p>
                     <ul class="sidebar-menu">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Get in touch</a></li>
                     </ul>
-                    <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i
-                            class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse"
-                                                              class="external gplus"><i
-                            class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse"
-                                                                 class="external twitter"><i class="fa fa-twitter"></i></a><a
-                            href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#"
-                                                                                                               data-animate-hover="pulse"
-                                                                                                               class="email"><i
-                            class="fa fa-envelope"></i></a></p>
-                    <div class="copyright">
-                        <p class="credit">&copy;2016 Your name or company | Template by <a
-                                href="https://bootstrapious.com/e-commerce-templates" class="external">Bootstrapious</a>
-                        </p>
-                        <!-- Please do not remove the backlink to us, unless you support the development at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
-
-                    </div>
+                    <p class="social">
+                        <a href="https://www.facebook.com/mkapiczy" data-animate-hover="pulse"
+                           class="external facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/michal-kapiczynski" data-animate-hover="pulse"
+                           class="external linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mkapiczy/" title="" class="external instagram"><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="mailto:kapiczynski.m@gmail.com" data-animate-hover="pulse" class="email"><i
+                                class="fa fa-envelope"></i></a></p>
                 </div>
             </div>
             <!--   *** SIDEBAR END ***  -->
@@ -74,27 +69,39 @@
                         <div class="content-column-content">
                             <h1>Kademlia</h1>
                             <p class="lead">Peer to peer networking is a complicated issue. How should the network be
-                                organised? How to join a network? How to discover other nodes? And how should the data
-                                be exchanged between the nodes? Kademlia is a distributed hash table for decentralized
-                                peer-to-peer networks, which helps to answer this questions.</p>
-                            <h2 class="text-center"><a href="https://github.com/mkapiczy/Kademlia2">Github repository</a></h2>
+                                organised? How can a new member join a network? How to discover other nodes? And how
+                                should the data
+                                be exchanged between the nodes? In order to solve this issues, the Kademlia distributed
+                                hash table for decentralized
+                                peer-to-peer networks has been implemented.</p>
+                            <h3 class="text-center">Used technologies</h3>
+                            <ol class="list-inline text-center">
+                                <li>Javascript</li>
+                                <li>Node.JS</li>
+                            </ol>
+                            <h2 class="text-center"><a href="https://github.com/mkapiczy/Kademlia2">Github
+                                repository</a></h2>
+
                             <div id="main-slider">
-                                <div class="item"><img alt="" src="img/portfolio/oauth-1.png" class="img-responsive">
-                                </div>
-                                <div class="item"><img alt="" src="img/portfolio/oauth-2.png" class="img-responsive">
+                                <div class="item"><img alt="" src="img/slider/kademlia.jpg" class="img-responsive">
                                 </div>
                             </div>
                             <!-- /#main-slider-->
-                            <p>The application has been created with educational purposes for Identity and Privacy
-                                course at Aarhus University. The application implements an OAuth2 client to communicate
-                                with the custom implementation of OAuth2 Authorization server from the project:
-                                <a href="detail-oauth-server.html">OAuthAuthorizationServer:</a>
+
+                            <p>The project has been created in group of 3 people with educational purposes for Building
+                                the Internet of Things with P2P and Cloud Computing course at Aarhus University.
                             </p>
+                            <p>The Kademlia implementation has been created based on the <a
+                                    href="http://xlattice.sourceforge.net/components/protocol/kademlia/specs.html">Kademlia:
+                                A Design Specification</a></p>
                             <h2>Running the application</h2>
-                            <p>To run the application from your IDE, simply run the
-                                com.github.mkapiczy.oauth_server.Application class as a Java Application. Alternatively
-                                the application can be started from the terminal using maven with mvn
-                                spring-boot:run.</p>
+                            <p>To run the application node.js and npm needs to be installed on your station.</p>
+
+                            <p>First install node packages by executing: <code> npm install </code></p>
+
+                            <p>Basic command to start a single node listening on a specific port is: <code>node index.js $portNumber</code></p>
+
+                            <p>It is possible to start 10 nodes at a time by running a script: <code> ./start.sh</code></p>
                         </div>
                     </div>
                 </div>

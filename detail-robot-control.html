@@ -33,31 +33,26 @@
             <!--   *** SIDEBAR ***-->
             <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
                 <div class="sidebar-content">
-                    <h1 class="sidebar-heading"><a href="index.html">Creative</a></h1>
-                    <p class="sidebar-p">I am a creative illustrator and graphic designer with more than 10 years of
-                        experience. </p>
-                    <p class="sidebar-p">Originally from Toronto, currently based in London. </p>
+                    <h1 class="sidebar-heading">Hello!</h1>
+                    <h1 class="sidebar-heading">My name is Michal Kapiczynski</h1>
+                    <p class="sidebar-p">I am an experienced Software Developer, with primary expertise in web
+                        development, and software engineering. However, I believe that the world of IT is definitely too
+                        fascinating to restrict yourself to a single area of interest.</p>
+                    <p class="sidebar-p">Originally from Warsaw, currently living in Aarhus. </p>
                     <ul class="sidebar-menu">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Get in touch</a></li>
                     </ul>
-                    <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i
-                            class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse"
-                                                              class="external gplus"><i
-                            class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse"
-                                                                 class="external twitter"><i class="fa fa-twitter"></i></a><a
-                            href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#"
-                                                                                                               data-animate-hover="pulse"
-                                                                                                               class="email"><i
-                            class="fa fa-envelope"></i></a></p>
-                    <div class="copyright">
-                        <p class="credit">&copy;2016 Your name or company | Template by <a
-                                href="https://bootstrapious.com/e-commerce-templates" class="external">Bootstrapious</a>
-                        </p>
-                        <!-- Please do not remove the backlink to us, unless you support the development at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
-
-                    </div>
+                    <p class="social">
+                        <a href="https://www.facebook.com/mkapiczy" data-animate-hover="pulse"
+                           class="external facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/michal-kapiczynski" data-animate-hover="pulse"
+                           class="external linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mkapiczy/" title="" class="external instagram"><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="mailto:kapiczynski.m@gmail.com" data-animate-hover="pulse" class="email"><i
+                                class="fa fa-envelope"></i></a></p>
                 </div>
             </div>
             <!--   *** SIDEBAR END ***  -->
@@ -73,9 +68,17 @@
                     <div class="col-lg-8">
                         <div class="content-column-content">
                             <h1>Robot Control</h1>
-                            <p class="lead">Robots are an advanced technology, but usually (Let's not consider AI
+                            <p class="lead">Robots are definitely advanced designs, but usually (Let's not consider AI
                                 scenarios for now) they are only as advanced as they are told to be. Robot Control is an
                                 interface for programming robot behaviour.</p>
+
+                            <h3 class="text-center">Used technologies</h3>
+                            <ol class="list-inline text-center">
+                                <li>Java</li>
+                                <li>JavaFX</li>
+                                <li>Scheme</li>
+                            </ol>
+
                             <h2 class="text-center"><a
                                     href="https://github.com/mkapiczy/PLPA-robotControl">Github
                                 repository</a></h2>
@@ -93,56 +96,61 @@
                             <p>The project was implemented with use of two different programming paradigms:
 
                                 <ol>
-                                    <li>imperative (Java)
+                                    <li>Imperative</li>
 
                             <p>The imperative part is written in Java, and is built as a JavaFX application. This part
-                                contains
-                                all the GUI logic and uses a Kawa framework for communicating with the functional part.
-                                The
-                                application is split into several packages in order to separate logic: GUI - containing
-                                all user interface
-                                components and functionality such as animations. Robot - holding a model of the robot
-                                state which is
-                                mapped when communicating with Scheme. Utils - different utilities such as file reader
-                                for loading
-                                scheme files and mapping used when displaying the floor. Scheme - containing Scheme
-                                communication
-                                logic.
+                                contains all the GUI logic and uses a Kawa framework for communicating with the
+                                functional part.
 
-                                To communicate with Scheme the Kawa framework is used. This framework allows Scheme to
-                                run
-                                in a Java environment.</p>
-                            </li>
-                            <li>functional (Scheme)
+                                The application is split into several packages in order to separate logic: </p>
+                            <ul>
+                                <li>GUI - containing all user interface components and functionality such as
+                                    animations.
+                                </li>
+                                <li>Robot - holding a model of the robot state which is mapped when communicating with
+                                    Scheme.
+                                <li> Utils - different utilities such as file reader for loading scheme files and
+                                    mapping used when displaying the floor.
+                                </li>
+                                <li>Scheme - containing Scheme communication logic.</li>
+                            </ul>
 
-                                <p>
-                                    The Scheme code contains all the functionality of the program regarding robot
-                                    behaviour, and is based
-                                    on the functional programming paradigm. The implementation was split into separate
-                                    files. The
-                                    FloorPlan - which holds the state of the floor. FloorUtil - which is used as an
-                                    accessor to the floor
-                                    and tiles. Robot - holds information about the robot ”object”, and defines the rules
+                            <p>To communicate with Scheme the Kawa framework is used. This framework allows Scheme to
+                                run in a Java environment.</p>
+
+                            <li>Functional</li>
+                            <p>
+                                The Scheme code contains all the functionality of the program regarding robot
+                                behaviour, and is based on the functional programming paradigm.
+
+                                The implementation was split into separate files.
+                            <ul>
+                                <li>The FloorPlan - which holds the state of the floor.</li>
+                                <li>FloorUtil - which is used as an accessor to the floor and tiles.</li>
+                                <li>Robot - holds information about the robot ”object”, and defines the rules
                                     imposed on its
-                                    behaviour. Simulation - which runs the simulation and calls procedures of the robot.
-                                    As mentioned, Scheme is a functional programming language, and is very good at
-                                    handling
-                                    computations.
+                                    behaviour
+                                </li>
+                                <li>Simulation - which runs the simulation and calls procedures of the robot.</li>
+                            </ul>
 
-                                    It gave a good separation of concerns, as all logic of the robot is contained in
-                                    Scheme, and view
-                                    logic in Java. The robot behaviour has been encapsulated in the class representation
-                                    being a function
-                                    containing other functions. The robot class function is immutable meaning that every
-                                    call changing the
-                                    robot state resulted in creation of a new robot instance. However, not all of the
-                                    inside functions are
-                                    pure functions because some of them depend on the Floor Plan representation, which
-                                    is in contradiction
-                                    to functional programming paradigm.
-                                </p></li>
                             </ol>
                             </p>
+                            <p>As mentioned, Scheme is a functional programming language, and is very good at
+                                handling
+                                computations.
+
+                                It gave a good separation of concerns, as all logic of the robot is contained in
+                                Scheme, and view
+                                logic in Java. The robot behaviour has been encapsulated in the class representation
+                                being a function
+                                containing other functions. The robot class function is immutable meaning that every
+                                call changing the
+                                robot state resulted in creation of a new robot instance. However, not all of the
+                                inside functions are
+                                pure functions because some of them depend on the Floor Plan representation, which
+                                is in contradiction
+                                to functional programming paradigm.</p>
 
                             <p>The system consists of two independent components: Java and Scheme, communicating with
                                 each other. The project was designed with focus on proper separation of concerns between
@@ -156,6 +164,11 @@
                                 \cite{javafx}. This component contains all the GUI logic and uses a Kawa framework for
                                 communicating with the functional part. This framework allows Scheme to run in a Java
                                 environment.</p>
+
+                            <h2>Running the application</h2>
+                            <p>In order to run an application simply import it into your IDE with JavaFX configuration,
+                                and run it as Java Application. </p>
+
                         </div>
                     </div>
                 </div>

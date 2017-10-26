@@ -67,73 +67,52 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="content-column-content">
-                            <h1>OAuth Authorization Server</h1>
-                            <p class="lead">OAuth is an open standard for an access delegation. It is one of the most
-                                widely used authorization standards. You use it every time you click "Login with
-                                Facebook" or any other social network provider from a third party website. Being able to
-                                implement the client making use of the OAuth API is very common use case in many
-                                applications. However, this project aims to get insight into the OAuth server side
-                                implementation of the standard. What exactly happens when we click the well known "Login
-                                with Facebook" button?</p>
+                            <h1>Django Webapp</h1>
+                            <p class="lead">The project is a web application facilitating the university course
+                                management process. It consists of two parts a student portal, and a tutor portal.</p>
 
                             <h3 class="text-center">Used technologies</h3>
                             <ol class="list-inline text-center">
-                                <li>Java</li>
-                                <li>Spring</li>
-                                <li>Spring Boot</li>
-                                <li>Heroku</li>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>Bootstrap</li>
                             </ol>
 
-                            <h2 class="text-center"><a href="https://github.com/mkapiczy/OAuthAuthorizationServer">Github repository</a>
+                            <h2 class="text-center"><a href="https://github.com/mkapiczy/ZPR">Github
+                                repository</a>
                             </h2>
-                            <div id="main-slider">
-                                <div class="item"><img alt="" src="img/portfolio/oauth-1.png" class="img-responsive">
-                                </div>
-                                <div class="item"><img alt="" src="img/portfolio/oauth-2.png" class="img-responsive">
-                                </div>
-                            </div>
-                            <!-- /#main-slider-->
-                            <p>The application has been created with educational purposes to get knowledge about
-                                machinisms behind OAuth2 server side operations. The application does not provide user
-                                registration functionality, but during app registration it is possible to associate an
-                                user with registered app.</p>
-                            <p>After having registered the app it is possible to use OAuth2 authorization mechanism
-                                by:</p>
-                            <ol>
-                                <li>Redirecting user to address providing necessary parameters client_id (appId),
-                                    redirect_uri:
 
-                                   <code>https://oauth-authorization-server.herokuapp.com/oauth/authenticate?client_id=%s&redirect_uri=%s</code>
-                                </li>
-                                <li>Handling authorization server redirect and retrieving authorization code from the
-                                    response.
-                                </li>
-                                <li>Sending request to the authorization server requiring access token:
-
-                                   <code>https://oauth-authorization-server.herokuapp.com/oauth/access_token?client_id=%s&redirect_uri=%s&client_secret=%s&code=%s</code>
-
-                                    <p>The request requires four parameters: client_id - unique application id generated
-                                        during application registration in authorization server system, redirect_uri -
-                                        address to which authorization server shall send response after authentication -
-                                        for
-                                        request validation purposes, client_secret - unique identifier generated during
-                                        application registration in authorization server system, code - authorization
-                                        code
-                                        generated in previous step,</p>
-                                </li>
-                                <li>Getting required resources with use of access token received in previous step.
-
-                                    <code>https://oauth-authorization-server.herokuapp.com/oauth/resource?access_token=%s</code>
-                                </li>
-                            </ol>
-                            <p>An example implementation of a client app using the authorization server api can be found
-                                in project:
-                                <a href="detail-oauth-client.html">OAuthClient</a></p>
+                            <p>The application has been created with use of Python language and Django web
+                                framework.</p>
+                            <p>It provides two modules:
+                            <ul>
+                                <li>Tutor module</li>
+                                <li>Student module</li>
+                            </ul>
+                            </p>
+                            <p>Tutor module provides functionalities such as:
+                            <ul>
+                                <li>Managing students list assigned to the specific course</li>
+                                <li>Managing project list</li>
+                                <li>Creating course related announcements</li>
+                                <li>Sending notifications to students</li>
+                            </ul>
+                            </p>
+                            <p>Student module provides functionalities such as:
+                            <ul>
+                                <li>Viewing announcements added by tutors</li>
+                                <li>Signing up for projects in groups</li>
+                            </ul>
+                            </p>
                             <h2>Running the application</h2>
-                            <p>To run the application from your IDE, simply run the
-                                com.github.mkapiczy.oauth_server.Application class as a Java Application. Alternatively
-                                the application can be started from the terminal using maven with mvn
-                                spring-boot:run.</p>
+                            <p>
+                                The application is in polish and needs some basic initial configuration like registering
+                                users for a proper app operation. For this reason, it is not suggested to run an
+                                application on your own.
+                                However, from a strictly technical point of view it is possible. It is required to have
+                                Python version 3.0+ and Django installed on your machine. Then, it is enough to run from the project base
+                                directory a command <code>python manage.py runserver</code>
+                            </p>
                         </div>
                     </div>
                 </div>
