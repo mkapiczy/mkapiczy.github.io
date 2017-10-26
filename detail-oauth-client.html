@@ -72,7 +72,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="content-column-content">
-                            <h1>OAuth Authorization Server</h1>
+                            <h1>OAuth Client</h1>
                             <p class="lead">OAuth is an open standard for an access delegation. It is one of the most
                                 widely used authorization standards. You use it every time you click "Login with
                                 Facebook" or any other social network provider from a third party website. Being able to
@@ -80,8 +80,7 @@
                                 application. However, this project aims to get insight into the OAuth server side
                                 implementation of the standard. What exactly happens when we click the well known "Login
                                 with Facebook" button?</p>
-                            <h2><a href="https://github.com/mkapiczy/OAuthAuthorizationServer">Github repository</a>
-                            </h2>
+                            <h2><a href="https://github.com/mkapiczy/OAuthClient">Github repository</a></h2>
                             <div id="main-slider">
                                 <div class="item"><img alt="" src="img/portfolio/oauth-1.png" class="img-responsive">
                                 </div>
@@ -89,42 +88,11 @@
                                 </div>
                             </div>
                             <!-- /#main-slider-->
-                            <p>The application has been created with educational purposes to get knowledge about
-                                machinisms behind OAuth2 server side operations. The application does not provide user
-                                registration functionality, but during app registration it is possible to associate an
-                                user with registered app.</p>
-                            <p>After having registered the app it is possible to use OAuth2 authorization mechanism
-                                by:</p>
-                            <ol>
-                                <li>Redirecting user to address providing necessary parameters client_id (appId),
-                                    redirect_uri:
-
-                                    https://oauth-authorization-server.herokuapp.com/oauth/authenticate?client_id=%s&redirect_uri=%s
-                                </li>
-                                <li>Handling authorization server redirect and retrieving authorization code from the
-                                    response.
-                                </li>
-                                <li>Sending request to the authorization server requiring access token:
-
-                                    https://oauth-authorization-server.herokuapp.com/oauth/access_token?client_id=%s&redirect_uri=%s&client_secret=%s&code=%s
-
-                                    <p>The request requires four parameters: client_id - unique application id generated
-                                        during application registration in authorization server system, redirect_uri -
-                                        address to which authorization server shall send response after authentication -
-                                        for
-                                        request validation purposes, client_secret - unique identifier generated during
-                                        application registration in authorization server system, code - authorization
-                                        code
-                                        generated in previous step,</p>
-                                </li>
-                                <li>Getting required resources with use of access token received in previous step.
-
-                                    https://oauth-authorization-server.herokuapp.com/oauth/resource?access_token=%s
-                                </li>
-                            </ol>
-                            <p>An example implementation of a client app using the authorization server api can be found
-                                in project:
-                                <a href="detail-oauth-client.html">OAuthClient</a></p>
+                            <p>The application has been created with educational purposes for Identity and Privacy
+                                course at Aarhus University. The application implements an OAuth2 client to communicate
+                                with the custom implementation of OAuth2 Authorization server from the project:
+                                <a href="detail-oauth-server.html">OAuthAuthorizationServer:</a>
+                            </p>
                             <h2>Running the application</h2>
                             <p>To run the application from your IDE, simply run the
                                 com.github.mkapiczy.oauth_server.Application class as a Java Application. Alternatively
