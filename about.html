@@ -49,7 +49,8 @@
             <ul class="sidebar-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="about.html">About</a></li>
-                <ul class="sidebar-submenu" type="none">
+                <ul class="sidebar-submenu hidden-xs hidden-sm" type="none">
+                    <li><a href="about.html#intro-section">About</a></li>
                     <li><a href="about.html#skills-section">Professional skills</a></li>
                     <li><a href="about.html#education-section">Education</a></li>
                     <li><a href="about.html#job-section">Job Experience</a></li>
@@ -70,14 +71,23 @@
         </div>
     </nav>
     <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-column">
+        <div class="row">
+            <nav id="menu-button-row" class="visible-xs visible-sm navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid button-container">
+                    <button type="button" id="sidebarCollapse2" class="btn btn-ghost center-block sidebarCollapse">
+                        <i class="fa fa-align-left"></i>Menu
+                    </button>
+                </div>
+                <ul type="none" class="list-inline text-center">
+                    <li><a href="about.html#intro-section">About</a></li>
+                    <li><a href="about.html#skills-section">Professional skills</a></li>
+                    <li><a href="about.html#education-section">Education</a></li>
+                    <li><a href="about.html#job-section">Job Experience</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <nav id="menu-button-row" class="navbar small-navbar visible-xs visible-sm navbar-default navbar-fixed-top row">
-            <div class="container-fluid button-container">
-                <button type="button" id="sidebarCollapse2" class="btn btn-ghost center-block sidebarCollapse">
-                    <i class="fa fa-align-left"></i>Menu
-                </button>
-            </div>
-        </nav>
+
         <div class="row">
             <div class="col-lg-10">
                 <div class="content-column-content">
@@ -85,13 +95,9 @@
                     <p class="lead">A software developer and computer engineering student from Poland with a
                         broad range of both technical and everyday life interests. </p>
 
-                    <div class="visible-xs visible-sm">
-                        <ul type="none">
-                            <li><a href="about.html#skills-section">Professional skills</a></li>
-                            <li><a href="about.html#education-section">Education</a></li>
-                            <li><a href="about.html#job-section">Job Experience</a></li>
-                        </ul>
-                    </div>
+                    <a id="intro-section">
+                        <hr>
+                    </a><br><br><br>
                     <div class="row" if="introduction-row">
                         <div class="col-md-8">
 
@@ -109,9 +115,13 @@
                             <p><img src="img/about.jpg" alt="This is me"
                                     class="image img-circle img-responsive"></p>
                         </div>
-                    </div><br>
+                    </div>
+                    <br>
+                    <a id="skills-section">
+                        <hr>
+                    </a><br><br><br>
                     <div class="row" if="skills-row">
-                        <h4 class="text-uppercase text-center"><a id="skills-section">Professional skills</a></h4>
+                        <h4 class="text-uppercase text-center">Professional skills</h4>
                         <div class="col-md-6">
                             <h5>Languages</h5>
                             <div class="skill-item">
@@ -371,9 +381,13 @@
                             learning specific languages. It is crucial to be
                             acquainted with topics such as: design patterns, software architectures, useful
                             tools and diverse programming languages paradigms. </p>
-                    </div><br>
+                    </div>
+                    <br>
+                    <a id="education-section">
+                        <hr>
+                    </a><br><br><br>
                     <div class="row" id="education-row">
-                        <h4 class="text-uppercase"><a id="education-section">Education</a></h4>
+                        <h4 class="text-uppercase">Education</h4>
                         <hr>
                         <div>
                             <ol class="list-inline">
@@ -414,10 +428,13 @@
                                 area with implementation using OpenStreetMap system.</i></b>
                             </small>
                         </div>
+                    </div>
+                    <br>
+                    <a id="job-section">
                         <hr>
-                    </div><br>
+                    </a><br><br><br>
                     <div class="row" id="job-row">
-                        <h4 class="text-uppercase"><a id="job-section">JOB EXPERIENCE</a></h4>
+                        <h4 class="text-uppercase">JOB EXPERIENCE</h4>
                         <hr>
                         <div>
                             <ol class="list-inline">
@@ -496,7 +513,8 @@
                             </small>
                         </div>
                         <hr>
-                    </div><br>
+                    </div>
+                    <br>
                 </div>
                 <br><br>
             </div>
@@ -515,6 +533,7 @@
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/front.js"></script>
+<script src="js/custom.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
 <!---->
 <script>
@@ -534,14 +553,6 @@
     ga('send', 'pageview');
 
     $(document).ready(function () {
-
-        $('.sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-        });
-
-    });
-
-    $('#sidebar-content').width($('#sidebar').width()).affix()
 </script>
 </body>
 </html>

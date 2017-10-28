@@ -245,5 +245,4 @@ $(window).resize(function () {
         }, 205);
         windowWidth = newWindowWidth;
     }
-
 });

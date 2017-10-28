@@ -50,13 +50,21 @@
 
     #sidebar.active {
         margin-left: 0px;
+
+
     }
     .navbar {
         background-color: inherit ;
         position: fixed;
         width: 100%;
         z-index: 1;
+        padding-bottom: 40px;
     }
+
+    .navbar-left{
+        left:150px;
+    }
+
     .button-container{
         padding-top: 10px;
     }
