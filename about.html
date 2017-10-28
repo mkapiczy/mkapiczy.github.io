@@ -50,6 +50,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="about.html">About</a></li>
                 <ul class="sidebar-submenu" type="none">
+                    <li><a href="about.html#skills-section">Professional skills</a></li>
                     <li><a href="about.html#education-section">Education</a></li>
                     <li><a href="about.html#job-section">Job Experience</a></li>
                 </ul>
@@ -83,7 +84,15 @@
                     <h1>About me</h1>
                     <p class="lead">A software developer and computer engineering student from Poland with a
                         broad range of both technical and everyday life interests. </p>
-                    <div class="row">
+
+                    <div class="visible-xs visible-sm">
+                        <ul type="none">
+                            <li><a href="about.html#skills-section">Professional skills</a></li>
+                            <li><a href="about.html#education-section">Education</a></li>
+                            <li><a href="about.html#job-section">Job Experience</a></li>
+                        </ul>
+                    </div>
+                    <div class="row" if="introduction-row">
                         <div class="col-md-8">
 
                             <p>I have always considered myself a scientific mind. Adding to it an interest in
@@ -92,18 +101,17 @@
 
                             <p>I believe software development is more than just programming. Programming is
                                 already a process of implementing the solution. Software development is a more
-                                complex process. It is about analysing the problem, identifying possible
-                                solutions,
-                                designing the right system, and only then implementing, validating and
+                                complex issue. It is about analysing the problem, identifying possible
+                                solutions, designing the right one, and only then implementing, validating and
                                 verifying the system.</p>
                         </div>
                         <div class="col-md-4">
                             <p><img src="img/about.jpg" alt="This is me"
                                     class="image img-circle img-responsive"></p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <h4 class="text-uppercase text-center">Professional skills</h4>
+                    </div><br>
+                    <div class="row" if="skills-row">
+                        <h4 class="text-uppercase text-center"><a id="skills-section">Professional skills</a></h4>
                         <div class="col-md-6">
                             <h5>Languages</h5>
                             <div class="skill-item">
@@ -363,7 +371,7 @@
                             learning specific languages. It is crucial to be
                             acquainted with topics such as: design patterns, software architectures, useful
                             tools and diverse programming languages paradigms. </p>
-                    </div>
+                    </div><br>
                     <div class="row" id="education-row">
                         <h4 class="text-uppercase"><a id="education-section">Education</a></h4>
                         <hr>
@@ -407,7 +415,7 @@
                             </small>
                         </div>
                         <hr>
-                    </div>
+                    </div><br>
                     <div class="row" id="job-row">
                         <h4 class="text-uppercase"><a id="job-section">JOB EXPERIENCE</a></h4>
                         <hr>
@@ -488,7 +496,7 @@
                             </small>
                         </div>
                         <hr>
-                    </div>
+                    </div><br>
                 </div>
                 <br><br>
             </div>
