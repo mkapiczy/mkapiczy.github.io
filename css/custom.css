@@ -1,12 +1,80 @@
-div.affix {
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    padding-bottom: 5px;
+}
+
+#sidebar.active {
+    margin-left: 0px;
+    min-height: 100vh;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+#sidebar-content{
+    width: inherit;
+    margin-left: 0px;
+}
+
+@media (max-width: 768px) {
+
+    .content-column{
+        padding-top: 70px;
+    }
+
+    #sidebar {
+        margin-left: -285px;
+    }
+
+    #sidebar-content{
+        width: inherit;
+        margin-left: 0px;
+        height: calc(100vh - 20px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .content-column{
+        margin-left: 35px;
+    }
+
+    #sidebar.active {
+        margin-left: 0px;
+    }
+    .navbar{
+        background-color: inherit ;
+        position: fixed;
+        width: 100%;
+        left: 300px;
+        z-index: 1;
+    }
+    .button-container{
+        padding-top: 10px;
+    }
+}
+
+#nav-affix.affix {
     position: fixed;
     padding-left: 0;
     width: inherit;
+    left: 0px;
+    right: 0px;
+    top:0;
+    bottom: 0;
 }
-div.affix-top {
+#nav-affix.affix-top {
     position: static;
 }
-div.affix-bottom {
-    position: absolute;
+#nav-affix.affix-bottom {
+    position: fixed;
 }
 
