@@ -25,10 +25,11 @@
     margin-left: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
     .content-column{
         padding-top: 70px;
+        width: 100%;
     }
 
     #sidebar {
@@ -50,7 +51,7 @@
     #sidebar.active {
         margin-left: 0px;
     }
-    .navbar{
+    .navbar {
         background-color: inherit ;
         position: fixed;
         width: 100%;
