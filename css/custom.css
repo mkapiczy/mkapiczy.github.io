@@ -54,7 +54,6 @@
         background-color: inherit ;
         position: fixed;
         width: 100%;
-        left: 300px;
         z-index: 1;
     }
     .button-container{
