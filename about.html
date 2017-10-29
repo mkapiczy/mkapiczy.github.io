@@ -31,11 +31,11 @@
 
     <nav id="sidebar" class="col-xs-6 col-sm-4 col-md-3">
         <div id="sidebar-content" data-spy="affix">
-
-            <button type="button" id="sidebarCollapse1" class="btn btn-ghost center-block sidebarCollapse">
-                <i class="fa fa-align-left"></i>Menu
-            </button>
-
+            <div class="visible-xs visible-sm">
+                <button type="button" id="sidebarCollapse1" class="btn btn-ghost center-block sidebarCollapse">
+                    <i class="fa fa-align-left"></i>Menu
+                </button>
+            </div>
             <h1 id="sidebar-heading" class="sidebar sidebar-heading text-center">
                 Michał Kapiczyński<br>
                 <small class="text-muted">Software developer portfolio</small>
@@ -59,6 +59,11 @@
                     <li><a href="about.html#skills-section">Professional skills</a></li>
                     <li><a href="about.html#education-section">Education</a></li>
                     <li><a href="about.html#job-section">Job Experience</a></li>
+                    <li><a href="about.html#workshops-section">Workshops</a></li>
+                    <li><a href="about.html#extra-experience-section">Extra experience</a></li>
+                    <li><a href="about.html#languages-section">Foreign languages</a></li>
+
+
                 </ul>
                 <li><a href="contact.html">Get in touch</a></li>
             </ul>
@@ -76,33 +81,34 @@
         </div>
     </nav>
     <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-column">
-            <nav id="menu-button-row" class="visible-xs visible-sm navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid button-container">
-                    <button type="button" id="sidebarCollapse2" class="btn btn-ghost center-block sidebarCollapse">
-                        <i class="fa fa-align-left"></i>Menu
-                    </button>
-                </div>
-                <ul id="about-nav" type="none" class="list-inline text-center">
-                    <li><a href="about.html#intro-section">About</a></li>
-                    <li><a href="about.html#skills-section">Professional skills</a></li>
-                    <li><a href="about.html#education-section">Education</a></li>
-                    <li><a href="about.html#job-section">Job Experience</a></li>
-                </ul>
-            </nav>
-
-
+        <nav id="menu-button-row" class="visible-xs visible-sm navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid button-container">
+                <button type="button" id="sidebarCollapse2" class="btn btn-ghost center-block sidebarCollapse">
+                    <i class="fa fa-align-left"></i>Menu
+                </button>
+            </div>
+            <ul id="about-nav" type="none" class="list-inline text-center">
+                <li><a href="about.html#intro-section">About</a></li>
+                <li><a href="about.html#skills-section">Professional skills</a></li>
+                <li><a href="about.html#education-section">Education</a></li>
+                <li><a href="about.html#job-section">Job Experience</a></li>
+                <li><a href="about.html#workshops-section">Workshops</a></li>
+                <li><a href="about.html#extra-experience-section">Extra experience</a></li>
+                <li><a href="about.html#languages-section">Foreign languages</a></li>
+            </ul>
+        </nav>
 
         <div class="row">
             <div class="col-lg-10">
                 <div class="content-column-content">
+                    <a id="intro-section">
+                        <hr>
+                    </a><br><br>
                     <h1>About me</h1>
                     <p class="lead">A software developer and computer engineering student from Poland with a
                         broad range of both technical and everyday life interests. </p>
-
-                    <a id="intro-section">
-                        <hr>
-                    </a><br><br><br>
-                    <div class="row" if="introduction-row">
+                    <hr>
+                    <div class="row" id="introduction-row">
                         <div class="col-md-8">
 
                             <p>I have always considered myself a scientific mind. Adding to it an interest in
@@ -124,7 +130,7 @@
                     <a id="skills-section">
                         <hr>
                     </a><br><br><br>
-                    <div class="row" if="skills-row">
+                    <div class="row" id="skills-row">
                         <h4 class="text-uppercase text-center">Professional skills</h4>
                         <div class="col-md-6">
                             <h5>Languages</h5>
@@ -519,6 +525,294 @@
                         <hr>
                     </div>
                     <br>
+                    <a id="workshops-section">
+                        <hr>
+                    </a><br><br><br>
+                    <div class="row" id="workshops-row">
+                        <h4 class="text-uppercase">WORKSHOPS</h4>
+                        <hr>
+                        University and job are usually our primary source of knowledge and experience.
+                        However, they are not the only ones. I believe that workshops are a great way to expand our
+                        horizons by meeting with other developers and sharing experiences between each others.
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>21.07.2017</li>
+                                <li><b>Docker - building multi-container WWW system from scratch</b></li>
+                            </ol>
+                            <small class="text-muted">Stacja.IT, e-point - 8 hours workshop<br><br>
+                                My first practical encounter with a Docker container platform. A workshop allowed me to
+                                learn basics about Docker environment and configuration, which I believe would make it
+                                much
+                                easier to use Docker in a real life scenario when needed.
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>31.03.02.04.2017</li>
+                                <li><b>AUHack 2017</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                Aarhus University's largest hackaton<br><br>
+                                This was a first hackaton in my life, but definitely not the last one. Spending 3 days
+                                with creative and ambitious people wanting to do something
+                                meaningful was an amazing experience, and learning opportunity.<br><br>
+                                As a result of the hackaton a project <a href="detail/detail-number-what.html">NumberWhat</a>
+                                was created.
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>2017</li>
+                                <li><b>Aarhus Meetup Events</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                Meetups are usually the best way for getting knowledge about top topics in the field and
+                                making
+                                contact with local developers.
+                                Groups I have attended in Aarhus so far: <br><br>
+                                <b>Aarhus ReactJS</b><br>
+                                <b>ngAarhus</b><br>
+                                <b>GOTO Night Aarhus</b><br>
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>14.09.2016</li>
+                                <li><b>Angular2 Workshop</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                3 hours workshop with Nir Kaufman from 500Tech<br><br>
+                                <b><a href="https://www.linkedin.com/in/nirkaufman/">NIr Kaufman</a></b> is a Google
+                                Developer Expert (GDE) in web technologies and Angular,
+                                worldwide conference speaker, workshop mentor, Angular evangelist, tech community
+                                leader.<br><br>
+                                The workshop was an introduction to the Angular2 world.
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>2016</li>
+                                <li><b>Warsaw Meetup Events</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                Warsaw is a city perfect for software developers, who love to learn new things. The
+                                number of workshops
+                                every week is astonishing, which is an incredible opportunity for developers.
+                                Groups I have attended: <br><br>
+                                <b>Java User Group</b><br>
+                                <b>WarsawJS</b><br>
+                                <b>AngularJS</b><br>
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>20.04.2015-03.06.2015</li>
+                                <li><b>Java Programming Course</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                Having previous university experience with C++, and wanting to learn more practical
+                                aspect of programming, I decided to attend a java course organised by <b>Academy
+                                of Business</b> which was a great introduction into a Java world.<br><br>
+                                <b>Programme:</b>
+                                <ul>
+                                    <li>Module 1: Structured programming</li>
+                                    <li>Module 2: Structure of Java programs</li>
+                                    <li>Module 3: Object oriented programming</li>
+                                    <li>Module 4: Java applications</li>
+                                    <li>Module 5: Java advanced elements</li>
+                                    <li>Module 6: IDE</li>
+                                    <li>Module 7: Advanced elements</li>
+                                    <li>Module 8: Multithreading</li>
+                                    <li>Module 9: Core libraries</li>
+                                </ul>
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>17.04.2015-29.05.2015</li>
+                                <li><b>SQL Course</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                9 hours course organised by Warsaw School of Economics - Students Scientific Association
+                                of
+                                Computer Science
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>17.04.2015-29.05.2015</li>
+                                <li><b>Excel Course</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                9 hours course organised by Warsaw School of Economics - Students Scientific Association
+                                of
+                                Computer Science
+                            </small>
+                        </div>
+                        <hr>
+                    </div>
+                    <br>
+                    <a id="extra-experience-section">
+                        <hr>
+                    </a><br><br><br>
+                    <div class="row" id="extra-experience-row">
+                        <h4 class="text-uppercase">EXTRA EXPERIENCE</h4>
+                        <hr>
+                        Technologies are important, but so are personal skills.
+                        I am highly oriented towards further development, and therefore curious, and eager to learn new
+                        ideas.
+                        I know that being a software developer is not being an isolated island, but part of the bigger
+                        picture.
+                        Team work is crucial for achieving a goal of creating a product, which would satisfy the
+                        customer and will be exactly what the end user needs.
+                        Apart from technological experience, I value developing my personal and soft skills.
+
+
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>2017</li>
+                                <li><b>Member of Science and Technology iMentor organisation</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                iMentor is an organisation, which helps new international students with their first
+                                steps in Denmark, and at the Aarhus University. <br><br>
+                                I find being a mentor an opportunity to
+                                meet people from all over the world, help them find themselves in different country, and
+                                make new friends.
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>2014-2016</li>
+                                <li><b>Student organisation European Student's Forum AEGEE Europe</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                AEGEE (Association des États Généraux des Étudiants de l’Europe) is one of Europe’s
+                                biggest interdisciplinary student organisations. As a non-governmental, politically
+                                independent, and non-profit organisation AEGEE is open to students and young people from
+                                all faculties and disciplines. Founded in 1985 in Paris, today AEGEE has grown to a
+                                Network of 13000 friends, present in 200 cities in 40 countries all over Europe.<br><br>
+
+                                For me, being a member of a student organisation was a chance to learn how big projects
+                                work, and how to manage them properly. It was an opportunity to make new friendships,
+                                and
+                                to learn that in real life non-technical skills are as important as the technical
+                                knowledge.
+                                <br><br>
+
+                                Involved in projects:
+                                <ul>
+                                    <li><b>Network Meeting</b> - international youth conference, which took place in
+                                        Warsaw on 30.04-03.05.2015.<br>
+                                        Network Meeting is the biggest local project of the organisation. The project
+                                        team consisted of more than 20 people. I was part of Fundraising team, with
+                                        responsibility of communicating with sponsors.
+                                    </li>
+                                    <li><b>Reach Higher</b> - soft skills workshops for students.<br>
+                                        The project was organised in a group of 6 people. My responsibilities were
+                                        developing a project website with use of Wordpress platform, overseeing an
+                                        workshops enrollment process, and communicating with students.
+                                    </li>
+                                    <li><b>Local training course</b> - 3 days training course for the organisation
+                                        members.<br>
+                                        I was a part of 4 people team, and was responsible for logistics, and contact
+                                        with the sponsors. I have learnt how hard it is to find the right sponsors, and
+                                        how to communicate with them.
+                                    </li>
+                                </ul>
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>04.09.2014-14.09.2014</li>
+                                <li><b>Youth exchange within program Erasmus+ (Kintai- Lithuania)</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                <b>Project topic: </b> "Catching Winds" - Youth exchange on sport and inclusion.<br>
+                                In exchange took part 30 participants from 3 countries: Estonia, Lithuania and
+                                Poland<br><br>
+
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li>20.08.2014-28.08.2014</li>
+                                <li><b>Youth exchange within program Youth in Action (Cagliari - Italy)</b></li>
+                            </ol>
+                            <small class="text-muted">
+                                <b>Project topic: </b> "In Your Shoes" - Youth exchange on sport and inclusion.<br>
+                                In exchange took part 50 participants from countries such as: Czech Republic, Germany,
+                                Hungary, Italy, Lithuania, Poland, Portugal, Romania and Slovakia<br><br>
+
+                                This youth exchange was my first, real international experience, which allowed me to
+                                test my language skills, and showed me how to operate in international environment. I
+                                think that this exchange opened my mind towards international world, which later led to
+                                my moving to Denmark.
+                            </small>
+                        </div>
+                        <hr>
+                    </div>
+                    <br>
+                    <a id="languages-section">
+                        <hr>
+                    </a><br><br><br>
+                    <div class="row" id="languages-row">
+                        <h4 class="text-uppercase">FOREIGN LANGUAGES</h4>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li><b>English</b></li>
+                                <li>Fluency in both written and spoken</li>
+                            </ol>
+                            <small class="text-muted">
+                                Cambridge English Advanced Certificate (<b>CAE</b> - Passed with grade <b>A</b> - CEFR
+                                Level <b>C2</b>
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li><b>Danish</b></li>
+                                <li>Basic - learning in progress</li>
+                            </ol>
+                            <small class="text-muted">
+                                I have been studying Danish since January 2017. I go to danish language school Lærdansk
+                                two times a week, and I study it on my own by listening to danish music, reading danish
+                                books (educational ones so far), and spending my free time on additional
+                                exercises.<br><br>
+
+                                Right now my level, allows me to read simple texts, and communicate in basic situations.
+                                However, understanding real life conversation in danish is still a challenge. I highly
+                                intend to master the language!
+                            </small>
+                        </div>
+                        <hr>
+                        <div>
+                            <ol class="list-inline">
+                                <li><b>Spanish</b></li>
+                                <li>Basic</li>
+                            </ol>
+                            <small class="text-muted">
+                                Hola, mi nombre es Miguel, y amo el español!<br><br>
+
+                                I find spanish a beutiful language, which I will master one day. One day, because now I
+                                focus on learning danish, but what is delayed is not lost!
+                            </small>
+                        </div>
+                        <hr>
+                    </div>
                 </div>
                 <br><br>
             </div>
