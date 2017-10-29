@@ -26,82 +26,128 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-<body>
-<div id="all">
-    <div class="container-fluid">
-        <div class="row row-offcanvas row-offcanvas-left">
-            <!--   *** SIDEBAR ***-->
-            <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
-                <div class="sidebar-content">
-                    <h1 class="sidebar-heading">Hello!</h1>
-                    <h1 class="sidebar-heading">My name is Michal Kapiczynski</h1>
-                    <p class="sidebar-p">I am an experienced Software Developer, with primary expertise in web
-                        development, and software engineering. However, I believe that the world of IT is definitely too
-                        fascinating to restrict yourself to a single area of interest.</p>
-                    <p class="sidebar-p">Originally from Warsaw, currently living in Aarhus. </p>
-                    <ul class="sidebar-menu">
-                        <li class="active"><a href="../index.html">Home</a></li>
-                        <li><a href="../about.html">About</a></li>
-                        <li><a href="../contact.html">Get in touch</a></li>
-                    </ul>
-                    <p class="social">
-                        <a href="https://www.facebook.com/mkapiczy" data-animate-hover="pulse"
-                           class="external facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/michal-kapiczynski" data-animate-hover="pulse"
-                           class="external linkedin"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/mkapiczy/" title="" class="external instagram"><i
-                                class="fa fa-instagram"></i></a>
-                        <a href="mailto:kapiczynski.m@gmail.com" data-animate-hover="pulse" class="email"><i
-                                class="fa fa-envelope"></i></a></p>
-                </div>
+<body data-spy="scroll" data-target="#sidebar">
+<div id="all" class="wrapper container-fluid">
+
+    <nav id="sidebar" class="col-xs-6 col-sm-4 col-md-3">
+        <div id="sidebar-content" data-spy="affix">
+
+            <div class="visible-xs visible-sm">
+                <button type="button" id="sidebarCollapse1" class="btn btn-ghost center-block sidebarCollapse">
+                    <i class="fa fa-align-left"></i>Menu
+                </button>
             </div>
-            <!--   *** SIDEBAR END ***  -->
-            <!--   *** DETAIL ***-->
-            <div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
-                <div class="small-navbar visible-xs">
-                    <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"><i
-                            class="fa fa-align-left"> </i>Menu
-                    </button>
-                    <h1 class="small-navbar-heading"><a href="../index.html">Michal Kapiczynski </a></h1>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="content-column-content">
-                            <h1>Web of Things</h1>
-                            <p class="lead">Internet of Things is definitely a hot topic nowadays. This project is my
-                                first encounter with a notion of IoT, and Web of Things.</p>
 
-                            <h3 class="text-center">Used technologies</h3>
-                            <ol class="list-inline text-center">
-                                <li>Javascript</li>
-                                <li>Node.JS</li>
-                                <li>Raspberry Pi</li>
-                            </ol>
+            <h1 id="sidebar-heading" class="sidebar sidebar-heading text-center">
+                Michał Kapiczyński<br>
+                <small class="text-muted">Software developer portfolio</small>
+            </h1>
 
-                            <h2 class="text-center"><a href="https://github.com/mkapiczy/WoT-Milestone2">Github
-                                repository</a></h2>
 
-                            <div id="main-slider">
-                                <div class="item"><img alt="" src="../img/slider/wot-1.jpg"
-                                                       class="img-responsive">
-                                </div>
-                                <div class="item"><img alt="" src="../img/slider/wot-2.jpg"
-                                                       class="img-responsive">
-                                </div>
-                            </div>
-                            <!-- /#main-slider-->
+            <div class="hidden-xs hidden-sm">
+                <p class="sidebar sidebar-p text-center">I am an experienced Software Developer, with primary expertise
+                    in
+                    web
+                    development, and software engineering. However, I believe that the world of IT is definitely
+                    too
+                    fascinating to restrict yourself to a single area of interest.</p>
 
-                            <p>The project is an implementation of a Web of Things API that communicates with a
-                                raspberry pi in order to read sensor measurements (temperature and humidity) and
-                                manipulate an actuator (LED).</a>
-                            </p>
+                <p class="sidebar-p text-center">Originally from Warsaw, currently living in Aarhus. </p>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href=../contact.html">Get in touch</a></li>
+            </ul>
+
+            <p class="social">
+                <a href="https://www.facebook.com/mkapiczy" data-animate-hover="pulse"
+                   class="external facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/michal-kapiczynski" data-animate-hover="pulse"
+                   class="external linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/mkapiczy/" title="" class="external instagram"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="mailto:kapiczynski.m@gmail.com" data-animate-hover="pulse" class="email"><i
+                        class="fa fa-envelope"></i></a></p>
+
+        </div>
+    </nav>
+    <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-column">
+        <nav id="menu-button-row" class="visible-xs visible-sm navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid button-container">
+                <button type="button" id="sidebarCollapse2" class="btn btn-ghost center-block sidebarCollapse">
+                    <i class="fa fa-align-left"></i>Menu
+                </button>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="content-column-content">
+                    <h1>Web of Things</h1>
+                    <p class="lead">Internet of Things is definitely a hot topic nowadays. This project is my
+                        first encounter with a notion of IoT, and Web of Things.</p>
+
+                    <h3 class="text-center">Used technologies</h3>
+                    <ol class="list-inline text-center">
+                        <li>Javascript</li>
+                        <li>Node.JS</li>
+                        <li>Raspberry Pi</li>
+                    </ol>
+
+                    <h2 class="text-center"><a href="https://github.com/mkapiczy/WoT-Milestone2">Github
+                        repository</a></h2>
+
+                    <div id="main-slider">
+                        <div class="item"><img alt="" src="../img/slider/wot-1.jpg"
+                                               class="img-responsive">
+                        </div>
+                        <div class="item"><img alt="" src="../img/slider/wot-2.jpg"
+                                               class="img-responsive">
                         </div>
                     </div>
+                    <!-- /#main-slider-->
+
+                    <p>The project is an implementation of a Web of Things API that communicates with a
+                        raspberry pi in order to read sensor measurements (temperature and humidity) and
+                        manipulate an actuator (LED).</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- Javascript files-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+<script src="../js/ekko-lightbox.js"></script>
+<script src="../js/jquery.scrollTo.min.js"></script>
+<script src="../js/masonry.pkgd.min.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/front.js"></script>
+<script src="../js/custom.js"></script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+<!---->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+</body>
 <!-- Javascript files-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
