@@ -1,9 +1,16 @@
 $('.sidebarCollapse').on('click', function () {
     $('#sidebar').toggleClass('active');
-    if( $( "#menu-button-row" ).hasClass( "navbar-left" )){
-        $( "#menu-button-row" ).removeClass( "navbar-left" );
-    } else {
-        $("#menu-button-row").addClass("navbar-left");
+
+    if($('#sidebar').hasClass("active")){
+        $('#sidebarCollapse2').hide();
+        $('#menu-button-row').css({
+            left: $('#sidebar').width()
+        });
+    } else{
+        $('#sidebarCollapse2').show();
+        $('#menu-button-row').css({
+            left: 0
+        });
     }
 });
 
