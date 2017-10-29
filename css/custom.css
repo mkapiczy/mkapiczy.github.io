@@ -32,8 +32,8 @@
 @media (max-width: 992px) {
 
     .content-column{
-        padding-top: 90px;
         width: 100%;
+        padding-top: 150px;
     }
 
     #sidebar {
